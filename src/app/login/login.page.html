@@ -1,0 +1,17 @@
+<ion-content text-center center>
+    <div class="container">
+        <ion-img class="image" src="/assets/images/MSA_Logo_Top.png"></ion-img>
+
+        <ion-list>
+            <ion-item>
+                <ion-icon name="person"></ion-icon>
+                <ion-input placeholder="Username" type="text" (input)="uname = $event.target.value"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="key"></ion-icon>
+                <ion-input placeholder="Password" type="password" (input)="password = $event.target.value"></ion-input>
+            </ion-item>
+        </ion-list>
+        <ion-button (click)="login()">GO</ion-button>
+    </div>
+</ion-content>

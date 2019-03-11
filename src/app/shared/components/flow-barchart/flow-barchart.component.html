@@ -1,0 +1,19 @@
+<div class="postingBarChart">
+  <ion-content #chart scrollX="true" scrollY="false">
+    <div class="fullChartFrame" [ngClass]="barType" [style.width]="fullChartWidth > 0 ? fullChartWidth + 'px' : ''">
+      <div *ngFor="let bar of bars; trackBy: trackByBars" [ngClass]="['point', bar.extraClass]" [ngClass]="{'higherThanMax': bar.higherThenMax}"
+        [class.active]="activePoints.includes(bar.id)" (click)="pointClick(bar.id)">
+        <div class="barWrapper">
+          <div class="barBox" [ngStyle]="{ 'height': bar.height, 'top': bar.top }"></div>
+        </div>
+        <div class="label">{{bar.label}}</div>
+      </div>
+      <div class="noData" *ngIf="bars.length === 0">Ingen data</div>
+    </div>
+  </ion-content>
+  <div class="gridWrapper" *ngIf="bars.length > 0">
+    <div class="gridLine gridBaseLine" [ngStyle]="{ top: xAxisTop }"></div>
+    <div class="gridLine chartLine" [ngClass]="{'chartLineMax': chartLineModeMax}" [ngStyle]="{ top: chartLineTop }"></div>
+    <flow-chart-bubble [top]="chartLineTop" [value]="chartLineValue" [text]="chartLineText" [isCurrency]="chartLineValueIsCurrency"></flow-chart-bubble>
+  </div>
+</div>

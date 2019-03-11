@@ -1,0 +1,41 @@
+   ion-button {
+       --ion-color-base: white;
+       --ion-color-shade: rgb(238, 236, 236);
+       --padding-start: 150px;
+       --padding-end: 150px;
+       color:var(--msa-main-blue);
+       text-align: center; 
+   }
+
+   ion-item {
+    --padding-start: 10px;
+    --inner-border-width: 0 0 0 0;
+   }
+
+   ion-icon {
+    padding-right: 10px;
+    color:var(--msa-main-blue);
+   }
+
+   .image {
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    display: block;
+   }
+
+   .container {
+    padding-top:15vh
+   }
+
+   ion-list{
+    background:white;
+    border:none;
+   }
+
+   ion-content {
+       background: var(--msa-main-blue);
+   }
+
+
+   

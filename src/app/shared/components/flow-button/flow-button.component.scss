@@ -1,0 +1,40 @@
+    ion-fab { 
+        bottom: 10px;
+        right: 10px;
+        position: fixed;
+    }
+
+    .defaultStyle {
+        background:var(--msa-main-blue);
+        width: 60px;
+        height:60px;
+        border-radius:30px;
+        font-size:25px;
+    }
+
+    .actionSmallStyle{
+        background:var(--msa-back-button-color);
+        margin-bottom: 120px;
+        width: 60px;
+        height:60px;
+        border-radius:30px;
+        font-size:25px;
+    }  
+
+    .actionLargeStyle{
+        background:var(--msa-back-button-color);
+        margin-bottom: 250px;
+        width: 60px;
+        height:60px;
+        border-radius:30px;
+        font-size:25px;
+    }  
+
+    ion-icon{
+        padding-top:2.5px;
+        font-size:35px;
+        color:white;
+    }
+
+    
+    

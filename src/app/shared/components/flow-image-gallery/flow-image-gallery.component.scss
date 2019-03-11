@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    color: white;
+}
+
+div {
+    padding: 10px 10px 10px 10px;
+}
+.container {
+    overflow: scroll;
+    height: 100%; 
+    background: var(--msa-back-button-color);
+}
+
+.button {
+    --ion-color-base: var(--msa-back-button-color);
+    --ion-color-shade: var(--msa-main-blue);
+    width: 50px;
+    border-radius: 30px;
+}
+
+ion-button {
+    padding-left: 5px;
+    padding-top: 2px;
+}

@@ -1,0 +1,31 @@
+<ion-item [ngClass]="classes" (click)="onClick()" [class.is-opened]="isExpanded">
+    <ion-icon slot="start" name="list" class="icon">{{icon}}</ion-icon>
+    <ion-icon class="arrow-icon" slot="end" [name]="iconName"></ion-icon>
+    <ion-label>
+        <span slot="start">{{title}}</span>
+        <div class="item">
+            <label>
+                <ion-icon slot="start" name="camera"></ion-icon>
+                {{textinput1}}
+            </label>
+            <div>
+                <label class="inputtext2">
+                    <ion-icon slot="end" name="camera"></ion-icon>
+                    {{textinput2}}
+                </label>
+            </div>
+        </div>
+        <div id="content" *ngIf="isExpanded == true">
+            <ion-icon slot="start" name="contacts"></ion-icon>
+            <ion-text></ion-text>
+            {{content}}
+            <ng-content></ng-content>
+        </div>
+        <div id="content" *ngIf="isExpanded == true">
+            <ion-icon slot="start" name="folder"></ion-icon>
+            <ion-text></ion-text>
+            {{content1}}
+            <ng-content></ng-content>
+        </div>
+    </ion-label>
+</ion-item>

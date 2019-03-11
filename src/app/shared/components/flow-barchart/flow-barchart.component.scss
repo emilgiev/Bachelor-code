@@ -1,0 +1,224 @@
+.postingBarChart ion-content {
+  background: none !important;
+}
+
+flow-barchart {
+  height: calc(100% - 35px - 35px)
+}
+
+.monitorChartWrapper {
+  height: calc(100% - 35px - 65px)
+}
+
+.postingBarChart {
+  height: 100%
+}
+
+.postingBarChart {
+  display: -webkit-flex;
+  display: flex;
+  position: relative
+}
+
+.postingBarChart flow-scroll {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 0
+}
+
+.postingBarChart flow-scroll .scroll-content {
+  height: 100%
+}
+
+.postingBarChart .scroll-x {
+  overflow-x: hidden
+}
+
+.postingBarChart .fullChartFrame {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  box-sizing: content-box;
+  padding: 0 7px
+}
+
+.postingBarChart .point .barBox,
+.postingBarChart .point .barBoxNegative {
+  background: #bbccd5
+}
+
+.postingBarChart .point .label {
+  color: #acbbc3;
+  text-align: center;
+}
+
+.postingBarChart .point.activated .barBox,
+.postingBarChart .point.active .barBox {
+  background: var(--msa-main-blue);
+}
+
+.postingBarChart .point.activated .label,
+.postingBarChart .point.active .label {
+  color: #78909c
+}
+
+.postingBarChart .point.cutValue.positive .barBox {
+  background: linear-gradient(180deg, rgba(187, 204, 213, 0), #bbccd5 10px, #bbccd5)
+}
+
+.postingBarChart .point.cutValue.positive.activated .barBox,
+.postingBarChart .point.cutValue.positive.active .barBox {
+  background: linear-gradient(180deg, rgba(255, 152, 0, 0), var(--msa-main-blue) 10px, var(--msa-main-blue))
+}
+
+.postingBarChart .point.cutValue.negative .barBox {
+  background: linear-gradient(0deg, rgba(187, 204, 213, 0), #bbccd5 10px, #bbccd5)
+}
+
+.postingBarChart .point.cutValue.negative.activated .barBox,
+.postingBarChart .point.cutValue.negative.active .barBox {
+  background: linear-gradient(0deg, rgba(255, 152, 0, 0), var(--msa-main-blue) 10px, var(--msa-main-blue))
+}
+
+.postingBarChart .incomeChart .point.activated .barBox,
+.postingBarChart .incomeChart .point.active .barBox {
+  background: #0aad5a
+}
+
+.postingBarChart .incomeChart .point.activated .label,
+.postingBarChart .incomeChart .point.active .label {
+  color: #78909c
+}
+
+.postingBarChart .incomeChart .point.cutValue.positive .barBox {
+  background: linear-gradient(180deg, rgba(187, 204, 213, 0), #bbccd5 10px, #bbccd5)
+}
+
+.postingBarChart .incomeChart .point.cutValue.positive.activated .barBox,
+.postingBarChart .incomeChart .point.cutValue.positive.active .barBox {
+  background: linear-gradient(180deg, rgba(10, 173, 90, 0), var(--msa-main-blue) 10px, var(--msa-main-blue))
+}
+
+.postingBarChart .incomeChart .point.cutValue.negative .barBox {
+  background: linear-gradient(0deg, rgba(187, 204, 213, 0), #bbccd5 10px, #bbccd5)
+}
+
+.postingBarChart .incomeChart .point.cutValue.negative.activated .barBox,
+.postingBarChart .incomeChart .point.cutValue.negative.active .barBox {
+  background: linear-gradient(0deg, rgba(10, 173, 90, 0), var(--msa-main-blue) 10px, var(--msa-main-blue))
+}
+
+.postingBarChart .point.higherThanMax.activated .barBox,
+.postingBarChart .point.higherThanMax.active .barBox {
+  background: #ff5252
+}
+
+.postingBarChart .point.higherThanMax.activated .label,
+.postingBarChart .point.higherThanMax.active .label {
+  color: #78909c
+}
+
+.postingBarChart .point.higherThanMax.cutValue.positive .barBox {
+  background: linear-gradient(180deg, rgba(187, 204, 213, 0), #bbccd5 10px, #bbccd5)
+}
+
+.postingBarChart .point.higherThanMax.cutValue.positive.activated .barBox,
+.postingBarChart .point.higherThanMax.cutValue.positive.active .barBox {
+  background: linear-gradient(180deg, rgba(255, 82, 82, 0), var(--msa-main-blue) 10px, var(--msa-main-blue))
+}
+
+.postingBarChart .point.higherThanMax.cutValue.negative .barBox {
+  background: linear-gradient(0deg, rgba(187, 204, 213, 0), #bbccd5 10px, #bbccd5)
+}
+
+.postingBarChart .point.higherThanMax.cutValue.negative.activated .barBox,
+.postingBarChart .point.higherThanMax.cutValue.negative.active .barBox {
+  background: linear-gradient(0deg, rgba(255, 82, 82, 0), var(--msa-main-blue) 10px, var(--msa-main-blue))
+}
+
+.postingBarChart .point {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  position: relative;
+  width: 48px;
+  max-width: 48px
+}
+
+.postingBarChart .point .barWrapper {
+  height: 80%;
+  position: absolute;
+  left: 7px;
+  right: 7px
+}
+
+.postingBarChart .point .barBox,
+.postingBarChart .point .barBoxNegative {
+  position: absolute;
+  width: 100%
+}
+
+.postingBarChart .point.positive .barBox {
+  border-radius: 6px 6px 0 0
+}
+
+.postingBarChart .point.negative .barBox {
+  border-radius: 0 0 6px 6px
+}
+
+.postingBarChart .point .label {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 80%;
+  font-size: 12px;
+  padding-top: 3px;
+  white-space: nowrap
+}
+
+.postingBarChart .point.cutValue .barBox {
+  border-radius: 0
+}
+
+.postingBarChart .gridWrapper {
+  height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none
+}
+
+.postingBarChart .gridLine {
+  height: 1px;
+  -webkit-transform: translateY(-.5px);
+  transform: translateY(-.5px);
+  position: absolute;
+  background: #bbccd5;
+  left: 0;
+  right: 0
+}
+
+.postingBarChart .gridLine.chartLine {
+  border-top: 1px dashed #78909c;
+  background: transparent
+}
+
+.postingBarChart .bubbleAnchor {
+  position: absolute;
+  left: 0
+}
+
+.postingBarChart .noData {
+  margin: auto;
+  color: #acbbc3
+}
+
+.noData {
+	color: #707070;
+	text-align: center;
+	padding: 40px 30px;
+	font-size: 15px
+}

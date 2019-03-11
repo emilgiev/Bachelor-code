@@ -1,0 +1,16 @@
+<ion-card>
+  <ion-card-header text-wrap>
+    <ion-card-title>
+      {{voucher.id}}
+    </ion-card-title>
+    <ion-card-subtitle>
+      {{voucher.text}}
+    </ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <div [innerHTML]="voucher.text"></div>
+    <ion-button (click)="goToVoucherDetails(voucher)" size='medium' expand='full'>
+      See Detail
+    </ion-button>
+  </ion-card-content>
+</ion-card>

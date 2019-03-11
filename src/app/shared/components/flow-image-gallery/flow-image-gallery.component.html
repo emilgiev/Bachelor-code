@@ -1,0 +1,10 @@
+<ion-button (click)="dismiss()">
+    <ion-icon name="close"></ion-icon>
+</ion-button>
+
+<div class="container">
+    <div *ngFor="let image of images">
+        <h1>{{image.title}}</h1>
+        <ion-img src="{{image.img}}"></ion-img>
+      </div>
+</div>

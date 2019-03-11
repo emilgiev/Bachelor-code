@@ -1,0 +1,26 @@
+ion-item {
+    background-color: white;
+    --inner-border-width: 0 0 0 0;
+} 
+
+.icon{
+    font-size: 40px;
+}
+.item {
+    display:flex;
+}
+p {
+    padding:15px;
+}
+.inputtext2{
+    padding-left:80px;
+}
+
+.isApproved{
+    background: rgb(90, 179, 90);
+}
+
+.canceled{
+    background: red;
+}
+

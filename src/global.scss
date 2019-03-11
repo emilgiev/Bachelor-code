@@ -1,0 +1,146 @@
+// http://ionicframework.com/docs/theming/
+@import "~@ionic/angular/css/core.css";
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@font-face{
+  font-family: Advent Pro;
+  src: url('./assets/fonts/advent-pro.woff2') format('woff2');
+}
+
+@font-face{
+  font-family: Poppins;
+  src: url('./assets/fonts/poppins.woff2') format('woff2');
+}
+
+.popover-large .popover-content {
+  background: white;
+  $popover-md-width: 100%;
+  $popover-ios-width: 100%;
+  $popover-wp-width: 100%;
+  $popover-md-border-radius:2px;
+  width: 100% !important;
+  height: 252px;
+  position: fixed;
+  left: 0px !important;
+  top: 565px !important;
+  overflow: hidden;
+}
+
+.popover-small .popover-content {
+  background: white;
+  $popover-md-width: 100%;
+  $popover-ios-width: 100%;
+  $popover-wp-width: 100%;
+  $popover-md-border-radius:2px;
+  width: 100% !important;
+  height: 100px;
+  position: fixed;
+  left: 0px !important;
+  top: 712px !important;
+  overflow: hidden;
+}
+
+.popover-large .popover-arrow,
+.popover-small .popover-arrow {
+  display:none;
+}
+
+.popover-large h1,
+.popover-small h1 {
+  font-size:16px;
+  padding-left:25px;
+  color:grey;
+}
+
+.popover-small .title-hr hr {
+  display: inline-block;
+  width: 70%;
+  margin: 5px 10px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.popover-large .title-hr-title2 hr{
+  display: inline-block;
+  width: 73%;
+  margin: 5px 10px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.popover-large .title-hr-title3 hr{
+  display: inline-block;
+  width: 57%;
+  margin: 5px 10px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.popover-large .home-icon,
+.popover-small .home-icon {
+  padding-left:25px;
+  color:grey;
+  --ion-color-base: transparent;
+  --ion-color-shade: rgb(207, 206, 206);
+}
+
+.popover-large .settings-icon,
+.popover-small .settings-icon {
+  padding-left:60px;
+  color:grey;
+  --ion-color-base: transparent;
+  --ion-color-shade: rgb(207, 206, 206);
+}
+
+.popover-large ion-fab {
+  padding-left:80px;
+}
+
+.popover-large .checkmark-icon,
+.popover-large .list-icon,
+.popover-large .images-icon {
+  width: 60px;
+  height:60px;
+  border-radius:30px;
+  color:white;
+  background: var(--msa-main-blue);
+  --ion-color-shade: grey;
+  margin-right: 20px;
+}
+
+.popover-large .checkmark-icon ion-icon,
+.popover-large .list-icon ion-icon,
+.popover-large .images-icon ion-icon,
+.popover-large .cancel-icon ion-icon {
+  font-size:35px;
+}
+
+.popover-large ion-fab div {
+  display: inline-grid;
+}
+
+.popover-large ion-fab div label {
+  text-align: center;
+  padding-right: 18px;
+  padding-top:5px;
+  color: var(--msa-main-blue);
+}
+
+.popover-large ion-fab div .calcel-color {
+  color: rgb(177, 48, 48);
+}
+
+.popover-large .cancel-icon {
+  width: 60px;
+  height:60px;
+  border-radius:30px;
+  color:white;
+  background:rgb(177, 48, 48);
+  --ion-color-shade: grey;
+  margin-right: 20px;
+}

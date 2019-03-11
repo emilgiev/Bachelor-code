@@ -1,0 +1,27 @@
+<flow-page-header 
+  [hasChart]="true" 
+  [activePoints]="activePoints" 
+  [pageTitle]="clickedMonth" 
+  [chartData]="dataAvg"
+  [currencySymbol]="'kr'" 
+  [currencyAmount]="currencyAmount" 
+  [tabs]="tabs" 
+  (changeTab)="onTabChanged($event)" 
+  (activePoint)="pointClicked($event)"
+  #pageHeader></flow-page-header>
+<ion-content fullscreen [scrollEvents]="true" [forceOverscroll]="true" scrollX="false" scrollY="true" #content
+  flowPageHeaderScroll [pageHeader]="pageHeader">
+  <ion-list>
+    <FlowExpandableListComponent-list 
+    *ngFor="let voucher of vouchers; let i = index"
+    title="{{voucher.PostingTxt}}"
+    textinput1="{{voucher.GrossAmountStr}}" 
+    textinput2="{{voucher.NetAmountStr}}" 
+    content="{{voucher.InvoiceNoStr}}"
+    content1="{{voucher.dataAreaId}}" 
+    (click)="getIndex(i)"
+    [classes]="classes[i]">
+  </FlowExpandableListComponent-list>
+  </ion-list>
+  <flow-button index={{itemIndex}}></flow-button>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "MSA-Flow",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

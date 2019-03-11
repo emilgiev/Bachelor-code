@@ -1,0 +1,34 @@
+<div class="expandedContent">
+  <div class="titleArea">
+    <div class="pageTitle">
+      {{ pageTitle }}
+    </div>
+    <div class="amountTitle">
+      {{ amountTitle }}
+    </div>
+    <div class="postTitle month">
+      <span *ngIf="selectedBarPoint">{{ chartBarName }}</span>
+    </div>
+  </div>
+  <div class="chartArea" [style.display]="hasChart ? '':'none'">
+    <div class="chartTitleArea">
+      <div class="chartTitle">
+        <flow-currency [currencyAmount]="currencyAmount" [currencySymbol]="currencySymbol"></flow-currency>
+      </div>
+    </div>
+    <flow-barchart [data]="chartData" [activePoints]="activePoints" (onPointClicked)="chartPointClick($event)"></flow-barchart>
+  </div>
+</div>
+<div class="collapsedContent">
+  <div class="titleArea">
+    <div class="pageTitle">
+      {{ pageTitle }}
+    </div>
+    <div class="postTitle month" *ngIf="selectedBarPoint">
+      {{ chartBarName }}
+    </div>
+  </div>
+</div>
+<div class="pageHeaderTabs" *ngIf="tabs && tabs.length > 0">
+  <a *ngFor="let tab of tabs;" (click)="onTabClick(tab.id)" [ngClass]="{active: tab.active, disabled: tab.disabled}" [hidden]="tab.disabled">{{ tab.name }}</a> 
+</div>

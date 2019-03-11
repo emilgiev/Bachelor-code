@@ -1,0 +1,20 @@
+<flow-page-header [pageTitle]="'Factura | Udgifter | Timer'" [amountTitle]="'FLOW'"></flow-page-header>
+
+<ion-content > 
+  <grid-line 
+  title="Faktura" 
+  text="Du mangler {{vouchersToBeApproved}} godkeldelse" 
+  amount="{{amount}} kr" 
+  backText="tilbage" 
+  icon="checkbox-outline" 
+  navigateTo="/vouchers/list"></grid-line>
+
+  <grid-line 
+  title="Udgift rapport" 
+  text="N/A" 
+  amount="N/A" 
+  backText="tilbage" 
+  icon="cash" ></grid-line>
+  <flow-button></flow-button>
+</ion-content>
+

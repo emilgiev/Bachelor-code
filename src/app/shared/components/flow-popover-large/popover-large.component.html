@@ -1,0 +1,34 @@
+<div>
+    <h1 class="title-hr-title2">Menu<hr /></h1>
+    <ion-button class="home-icon" (click)="navigateToHome()">
+        <ion-icon name="home"></ion-icon>
+        Home
+    </ion-button>
+    <ion-button class="settings-icon" (click)="navigateToSettings()">
+        <ion-icon name="settings"></ion-icon>
+        Settings
+    </ion-button>
+    <h1 class="title-hr-title3">Jeg vil gerne<hr /></h1>
+    <ion-fab >
+        <div>
+            <button
+            [disabled]="isDisabled"
+            class="checkmark-icon" 
+            (click)="approve()">
+                <ion-icon name="checkmark"></ion-icon>
+            </button>
+            <label>Approve</label>
+        </div>
+        <div>
+            <button class="cancel-icon" (click)="cancel()">
+                <ion-icon name="close"></ion-icon>
+            </button>
+            <label class="calcel-color" >Cancel</label>
+        </div>
+        <div>
+            <button class="images-icon" (click)="showImages()">
+                <ion-icon name="images"></ion-icon>
+            </button>
+            <label>Images</label>
+        </div>
+    </ion-fab>

@@ -1,0 +1,18 @@
+<flow-page-header [pageTitle]="'Flow'"></flow-page-header>
+<ion-content>
+    <ion-item>
+        <ion-label>API URL <br></ion-label>
+        <ion-input readonly type="text" [(ngModel)]="apiUrl"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label>Months to go back query</ion-label>
+        <ion-select [(ngModel)]="query">
+            <ion-select-option value="6">6</ion-select-option>
+            <ion-select-option value="12">12</ion-select-option>
+            <ion-select-option value="18">18</ion-select-option>
+            <ion-select-option value="24">24</ion-select-option>
+        </ion-select>
+    </ion-item>
+    <flow-back-button></flow-back-button>
+    <flow-button></flow-button>
+</ion-content>
